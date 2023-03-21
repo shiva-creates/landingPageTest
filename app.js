@@ -202,6 +202,7 @@ if (mobile6Query.matches) {
     values.bubble_scale = 1;
 
 }
+tlmoto.set(document.body, { overflow: "hidden" })
 
 tlmoto.to('.un-hide', {
     y: '0%',
@@ -237,6 +238,7 @@ tlmoto.to(".moto-container", 0, {
     display: 'none',
     overflow: 'hidden'
 })
+    .set(document.body, { overflow: "auto" })
     .fromTo(".tab-img", 1.5, {
         scale: 0.8,
         opacity: 0.3,
@@ -246,7 +248,6 @@ tlmoto.to(".moto-container", 0, {
         opacity: 1,
         ease: Back.easeOut.config(1.7)
     })
-
 
 // // Apply Same animation as The initial tabs
 // tlmoto.fromTo(elements, 1, {
