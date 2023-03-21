@@ -23,6 +23,7 @@ const mobile2Query = window.matchMedia("(max-width: 390px) and (max-height: 844p
 const mobile3Query = window.matchMedia("(max-width: 360px) and (max-height: 740px)");
 const mobile4Query = window.matchMedia("(max-width: 414px) and (max-height: 736px)");
 const mobile5Query = window.matchMedia("(max-width: 375px) and (max-height: 667px)");
+const mobile6Query = window.matchMedia("(max-width: 393px) and (max-height: 851px)");
 
 
 let values = {
@@ -185,6 +186,21 @@ if (mobile5Query.matches) {
     values.mbl_img_Y = "22%";
     values.device_container_scale = 0.5;
     values.bubble_scale = 1;
+}
+
+if (mobile6Query.matches) {
+    values.orange_circle_from_top = "58%"
+    values.orange_circle_from_left = "70%"
+    values.orange_circle_to_top = "-120%"
+    values.orange_circle_to_left = "-200%"
+    values.tab_img_x = "20%";
+    values.tab_img_y = "-26%";
+    values.tab_img_scale = 0.7,
+        values.mbl_img_X = "-260%";
+    values.mbl_img_Y = "25%";
+    values.device_container_scale = 0.5;
+    values.bubble_scale = 1;
+
 }
 
 tlmoto.to('.un-hide', {
